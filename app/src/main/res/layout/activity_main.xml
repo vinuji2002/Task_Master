@@ -19,7 +19,7 @@
           android:layout_gravity="center"
           android:text="Welcome Back"
           android:textSize="24sp"
-          android:textStyle="bold"/>
+          android:textStyle="bold" />
 
       <TextView
           android:layout_marginTop="4dp"
@@ -28,7 +28,16 @@
           android:layout_gravity="center"
           android:text="Today's Task"
           android:textSize="28sp"
-          android:textStyle="bold"/>
+          android:textStyle="bold" />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:clipToPadding="false"
+          android:orientation="vertical"
+          android:paddingBottom="100dp"
+          app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+          tools:listitem=""/>
 
   </LinearLayout>
 

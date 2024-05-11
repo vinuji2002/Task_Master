@@ -31,13 +31,14 @@
           android:textStyle="bold" />
 
       <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/taskRV"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:clipToPadding="false"
           android:orientation="vertical"
           android:paddingBottom="100dp"
           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-          tools:listitem=""/>
+          tools:listitem="@layout/view_task_layout"/>
 
   </LinearLayout>
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -50,6 +51,9 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="18sp"
+        app:icon="@drawable/ic_add_circle"
+        app:iconSize="25dp"
+        app:iconTint="@color/white"
 
         />
 
